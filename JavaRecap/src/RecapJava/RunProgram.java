@@ -33,7 +33,7 @@ public class RunProgram {
        //implementing arrays
        int[] randomNumbers; 
        
-       randomNumbers = new int[(int)((Math.random()*200-1)+1)];
+       randomNumbers = new int[(int)((Math.random()*10)+1)];
        
        for(int i = 0;i < randomNumbers.length; i++){
            randomNumbers[i]=(int)((Math.random()*200-1)+1);

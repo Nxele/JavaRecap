@@ -50,5 +50,8 @@ public class RunProgram {
        
        // quick search in the array
        System.out.println("searched number: "+Arrays.binarySearch(cloneOfArray,2));
+       
+       //working with list Arrays
+       
    }
 }

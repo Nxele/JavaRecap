@@ -1,5 +1,6 @@
 package RecapJava;
-
+import java.util.*;
+import javax.swing.JOptionPane;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -52,6 +53,21 @@ public class RunProgram {
        System.out.println("searched number: "+Arrays.binarySearch(cloneOfArray,2));
        
        //working with list Arrays
+       ArrayList<Integer> array = new ArrayList<Integer>();
        
+       //while loop to enter multiples numbers into the array
+       int arrayNum = Integer.parseInt(JOptionPane.showInputDialog(null,"please enter a number & zero to exit and display numbers"));
+       while(arrayNum !=0){
+           array.add(arrayNum);
+           arrayNum = Integer.parseInt(JOptionPane.showInputDialog(null,"please enter a number & zero to exit and display numbers"));
+       }
+       //for loop for diplaying numbers in the array 
+       for(int index: array){
+           System.out.println(index);
+       }
+       
+       //get the arra size and diplay it
+       int arraySize = array.size();
+       JOptionPane.showMessageDialog(null,"Your Array Size is: "+ arraySize);
    }
 }
